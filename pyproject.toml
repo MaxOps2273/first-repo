@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf-plan-summary"
+version = "0.1.0"
+description = "Summarize resource changes in Terraform plan JSON"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tf-plan-summary = "tfplan_summary.cli:main"
+
+[tool.setuptools]
+packages = ["tfplan_summary"]
